@@ -1,19 +1,25 @@
 # Country Shape Test Results
-
 The following table shows the scores and optimal shape for each country:
 | Country | Error | Image |
 |---------|-------|------------|
 | Egypt | 9.33% | ![Egypt](images/egypt.png) |
+| Glorioso Islands | 11.48% | ![Glorioso Islands](images/glorioso_islands.png) |
 | Ivory Coast | 15.65% | ![Ivory Coast](images/ivory_coast.png) |
 | Swaziland | 15.69% | ![Swaziland](images/swaziland.png) |
 | Sierra Leone | 16.12% | ![Sierra Leone](images/sierra_leone.png) |
+| Macau | 16.66% | ![Macau](images/macau.png) |
+| Niue | 16.91% | ![Niue](images/niue.png) |
+| Zimbabwe | 17.78% | ![Zimbabwe](images/zimbabwe.png) |
 | Suriname | 17.85% | ![Suriname](images/suriname.png) |
 | Angola | 18.97% | ![Angola](images/angola.png) |
 | Kenya | 19.39% | ![Kenya](images/kenya.png) |
 | Uruguay | 19.53% | ![Uruguay](images/uruguay.png) |
-| Zimbabwe | 19.89% | ![Zimbabwe](images/zimbabwe.png) |
-| Germany | 20.56% | ![Germany](images/germany.png) |
+| San Marino | 20.06% | ![San Marino](images/san_marino.png) |
+| Germany | 20.53% | ![Germany](images/germany.png) |
+| Norfolk Island | 20.89% | ![Norfolk Island](images/norfolk_island.png) |
+| Algeria | 20.91% | ![Algeria](images/algeria.png) |
 | Gabon | 21.20% | ![Gabon](images/gabon.png) |
+| Nauru | 21.89% | ![Nauru](images/nauru.png) |
 | Reunion | 21.89% | ![Reunion](images/reunion.png) |
 | Botswana | 21.90% | ![Botswana](images/botswana.png) |
 | Montenegro | 22.12% | ![Montenegro](images/montenegro.png) |
@@ -21,20 +27,24 @@ The following table shows the scores and optimal shape for each country:
 | Ethiopia | 22.30% | ![Ethiopia](images/ethiopia.png) |
 | Colombia | 22.80% | ![Colombia](images/colombia.png) |
 | South Korea | 22.85% | ![South Korea](images/south_korea.png) |
-| Zaire | 23.03% | ![Zaire](images/zaire.png) |
+| Zaire | 22.96% | ![Zaire](images/zaire.png) |
+| French Guiana | 23.35% | ![French Guiana](images/french_guiana.png) |
 | France | 23.58% | ![France](images/france.png) |
 | Mauritania | 23.60% | ![Mauritania](images/mauritania.png) |
 | Nigeria | 23.63% | ![Nigeria](images/nigeria.png) |
+| Christmas Island | 23.84% | ![Christmas Island](images/christmas_island.png) |
+| Wake Island | 24.02% | ![Wake Island](images/wake_island.png) |
+| Jarvis Island | 24.09% | ![Jarvis Island](images/jarvis_island.png) |
+| Sudan | 24.35% | ![Sudan](images/sudan.png) |
 | Tanzania, United Republic of | 24.39% | ![Tanzania, United Republic of](images/tanzania,_united_republic_of.png) |
-| Algeria | 24.67% | ![Algeria](images/algeria.png) |
 | Montserrat | 24.87% | ![Montserrat](images/montserrat.png) |
 | Nicaragua | 25.03% | ![Nicaragua](images/nicaragua.png) |
 | Spain | 25.93% | ![Spain](images/spain.png) |
-| Sudan | 25.99% | ![Sudan](images/sudan.png) |
-| Andorra | 26.29% | ![Andorra](images/andorra.png) |
 | Lesotho | 26.52% | ![Lesotho](images/lesotho.png) |
+| Mauritius | 26.70% | ![Mauritius](images/mauritius.png) |
 | Cambodia | 26.81% | ![Cambodia](images/cambodia.png) |
-| Bolivia | 27.03% | ![Bolivia](images/bolivia.png) |
+| Bolivia | 26.89% | ![Bolivia](images/bolivia.png) |
+| Andorra | 27.87% | ![Andorra](images/andorra.png) |
 | Senegal | 27.94% | ![Senegal](images/senegal.png) |
 | Ecuador | 28.04% | ![Ecuador](images/ecuador.png) |
 | Finland | 28.15% | ![Finland](images/finland.png) |
@@ -44,214 +54,203 @@ The following table shows the scores and optimal shape for each country:
 | Ireland | 28.83% | ![Ireland](images/ireland.png) |
 | Iraq | 29.00% | ![Iraq](images/iraq.png) |
 | Niger | 29.00% | ![Niger](images/niger.png) |
+| St. Helena | 29.09% | ![St. Helena](images/st._helena.png) |
+| Liechtenstein | 29.10% | ![Liechtenstein](images/liechtenstein.png) |
+| Howland Island | 29.13% | ![Howland Island](images/howland_island.png) |
 | Djibouti | 29.55% | ![Djibouti](images/djibouti.png) |
 | India | 29.59% | ![India](images/india.png) |
 | Libya | 29.69% | ![Libya](images/libya.png) |
 | Chad | 29.78% | ![Chad](images/chad.png) |
-| French Guiana | 29.94% | ![French Guiana](images/french_guiana.png) |
 | Saudi Arabia | 30.00% | ![Saudi Arabia](images/saudi_arabia.png) |
-| Singapore | 30.28% | ![Singapore](images/singapore.png) |
+| Bosnia and Herzegovina | 30.17% | ![Bosnia and Herzegovina](images/bosnia_and_herzegovina.png) |
 | Grenada | 30.47% | ![Grenada](images/grenada.png) |
 | Kuwait | 30.58% | ![Kuwait](images/kuwait.png) |
 | Serbia | 30.74% | ![Serbia](images/serbia.png) |
 | Iran | 31.03% | ![Iran](images/iran.png) |
-| Sri Lanka | 31.24% | ![Sri Lanka](images/sri_lanka.png) |
-| Romania | 31.33% | ![Romania](images/romania.png) |
-| Rwanda | 31.50% | ![Rwanda](images/rwanda.png) |
-| Ghana | 31.79% | ![Ghana](images/ghana.png) |
-| Guatemala | 32.08% | ![Guatemala](images/guatemala.png) |
-| St. Lucia | 32.15% | ![St. Lucia](images/st._lucia.png) |
-| Macedonia | 32.17% | ![Macedonia](images/macedonia.png) |
+| Rwanda | 31.25% | ![Rwanda](images/rwanda.png) |
+| Guatemala | 31.99% | ![Guatemala](images/guatemala.png) |
+| Baker Island | 32.22% | ![Baker Island](images/baker_island.png) |
+| St. Lucia | 32.31% | ![St. Lucia](images/st._lucia.png) |
 | Syria | 32.37% | ![Syria](images/syria.png) |
-| Qatar | 33.29% | ![Qatar](images/qatar.png) |
+| Sri Lanka | 32.44% | ![Sri Lanka](images/sri_lanka.png) |
+| Singapore | 32.59% | ![Singapore](images/singapore.png) |
+| Romania | 32.86% | ![Romania](images/romania.png) |
+| Brazil | 32.89% | ![Brazil](images/brazil.png) |
+| Midway Islands | 33.06% | ![Midway Islands](images/midway_islands.png) |
 | Equatorial Guinea | 33.29% | ![Equatorial Guinea](images/equatorial_guinea.png) |
 | Cameroon | 33.39% | ![Cameroon](images/cameroon.png) |
-| Malta | 33.41% | ![Malta](images/malta.png) |
-| Sao Tome and Principe | 33.49% | ![Sao Tome and Principe](images/sao_tome_and_principe.png) |
-| Bosnia and Herzegovina | 33.69% | ![Bosnia and Herzegovina](images/bosnia_and_herzegovina.png) |
-| Poland | 33.75% | ![Poland](images/poland.png) |
-| Afghanistan | 33.76% | ![Afghanistan](images/afghanistan.png) |
+| Malta | 33.42% | ![Malta](images/malta.png) |
+| Ghana | 33.64% | ![Ghana](images/ghana.png) |
+| Sao Tome and Principe | 33.67% | ![Sao Tome and Principe](images/sao_tome_and_principe.png) |
+| Afghanistan | 33.86% | ![Afghanistan](images/afghanistan.png) |
 | Australia | 34.18% | ![Australia](images/australia.png) |
 | Namibia | 34.20% | ![Namibia](images/namibia.png) |
+| Byelarus | 34.27% | ![Byelarus](images/byelarus.png) |
 | Netherlands | 34.28% | ![Netherlands](images/netherlands.png) |
-| Byelarus | 34.28% | ![Byelarus](images/byelarus.png) |
 | Bangladesh | 34.37% | ![Bangladesh](images/bangladesh.png) |
-| Myanmar (images/Burma) | 34.52% | ![Myanmar (Burma)](<myanmar_(burma).png>) |
-| Brazil | 35.18% | ![Brazil](images/brazil.png) |
+| Myanmar (Burma) | 34.52% | ![Myanmar (Burma)](images/myanmar_(burma).png) |
+| Venezuela | 34.64% | ![Venezuela](images/venezuela.png) |
+| Poland | 35.06% | ![Poland](images/poland.png) |
+| Macedonia | 35.12% | ![Macedonia](images/macedonia.png) |
+| Federated States of Micronesia | 35.20% | ![Federated States of Micronesia](images/federated_states_of_micronesia.png) |
 | Trinidad and Tobago | 35.21% | ![Trinidad and Tobago](images/trinidad_and_tobago.png) |
+| Qatar | 35.28% | ![Qatar](images/qatar.png) |
 | Barbados | 35.69% | ![Barbados](images/barbados.png) |
+| Juan De Nova Island | 35.82% | ![Juan De Nova Island](images/juan_de_nova_island.png) |
 | South Africa | 36.10% | ![South Africa](images/south_africa.png) |
+| Spratly Islands | 36.20% | ![Spratly Islands](images/spratly_islands.png) |
 | Honduras | 36.88% | ![Honduras](images/honduras.png) |
-| Bhutan | 37.40% | ![Bhutan](images/bhutan.png) |
+| Bouvet Island | 37.33% | ![Bouvet Island](images/bouvet_island.png) |
 | Thailand | 37.47% | ![Thailand](images/thailand.png) |
-| Lithuania | 37.54% | ![Lithuania](images/lithuania.png) |
+| Lithuania | 37.60% | ![Lithuania](images/lithuania.png) |
 | Tunisia | 37.62% | ![Tunisia](images/tunisia.png) |
 | Dominican Republic | 37.89% | ![Dominican Republic](images/dominican_republic.png) |
-| Venezuela | 37.90% | ![Venezuela](images/venezuela.png) |
 | Benin | 37.90% | ![Benin](images/benin.png) |
-| Heard Island & McDonald Islands | 37.95% | ![Heard Island & McDonald Islands](images/heard_island_&_mcdonald_islands.png) |
-| Albania | 38.48% | ![Albania](images/albania.png) |
+| Guinea-Bissau | 37.97% | ![Guinea-Bissau](images/guinea-bissau.png) |
+| Guernsey | 38.19% | ![Guernsey](images/guernsey.png) |
 | Monaco | 38.63% | ![Monaco](images/monaco.png) |
-| Eritrea | 38.89% | ![Eritrea](images/eritrea.png) |
-| Cocos (images/Keeling) Islands | 38.95% | ![Cocos (Keeling) Islands](<cocos_(keeling)_islands.png>) |
+| Eritrea | 38.93% | ![Eritrea](images/eritrea.png) |
+| Belgium | 38.96% | ![Belgium](images/belgium.png) |
 | Armenia | 39.01% | ![Armenia](images/armenia.png) |
-| Dominica | 39.43% | ![Dominica](images/dominica.png) |
+| Albania | 39.06% | ![Albania](images/albania.png) |
+| Cocos (Keeling) Islands | 39.21% | ![Cocos (Keeling) Islands](images/cocos_(keeling)_islands.png) |
+| Greenland | 39.41% | ![Greenland](images/greenland.png) |
+| Burkina Faso | 39.55% | ![Burkina Faso](images/burkina_faso.png) |
+| Azerbaijan | 39.75% | ![Azerbaijan](images/azerbaijan.png) |
 | Jordan | 39.77% | ![Jordan](images/jordan.png) |
+| Heard Island & McDonald Islands | 40.01% | ![Heard Island & McDonald Islands](images/heard_island_&_mcdonald_islands.png) |
+| Pitcairn Islands | 40.03% | ![Pitcairn Islands](images/pitcairn_islands.png) |
+| Dominica | 40.03% | ![Dominica](images/dominica.png) |
 | Martinique | 40.16% | ![Martinique](images/martinique.png) |
-| West Bank | 40.26% | ![West Bank](images/west_bank.png) |
-| Azerbaijan | 40.29% | ![Azerbaijan](images/azerbaijan.png) |
 | Moldova | 40.29% | ![Moldova](images/moldova.png) |
-| Zambia | 40.57% | ![Zambia](images/zambia.png) |
+| Zambia | 40.59% | ![Zambia](images/zambia.png) |
 | Taiwan | 40.86% | ![Taiwan](images/taiwan.png) |
+| West Bank | 40.94% | ![West Bank](images/west_bank.png) |
+| Mali | 41.02% | ![Mali](images/mali.png) |
 | Argentina | 41.11% | ![Argentina](images/argentina.png) |
 | North Korea | 41.18% | ![North Korea](images/north_korea.png) |
 | Man, Isle of | 41.34% | ![Man, Isle of](images/man,_isle_of.png) |
 | Morocco | 41.45% | ![Morocco](images/morocco.png) |
 | Hong Kong | 41.64% | ![Hong Kong](images/hong_kong.png) |
-| Burkina Faso | 41.71% | ![Burkina Faso](images/burkina_faso.png) |
-| Switzerland | 41.78% | ![Switzerland](images/switzerland.png) |
-| Guinea-Bissau | 41.84% | ![Guinea-Bissau](images/guinea-bissau.png) |
+| Liberia | 41.70% | ![Liberia](images/liberia.png) |
 | Guinea | 42.03% | ![Guinea](images/guinea.png) |
+| Central African Republic | 42.13% | ![Central African Republic](images/central_african_republic.png) |
 | Denmark | 42.27% | ![Denmark](images/denmark.png) |
-| Belgium | 42.41% | ![Belgium](images/belgium.png) |
-| Bulgaria | 42.47% | ![Bulgaria](images/bulgaria.png) |
-| Austria | 42.50% | ![Austria](images/austria.png) |
-| Madagascar | 42.62% | ![Madagascar](images/madagascar.png) |
-| Liberia | 42.82% | ![Liberia](images/liberia.png) |
-| Mali | 42.83% | ![Mali](images/mali.png) |
+| Bhutan | 42.95% | ![Bhutan](images/bhutan.png) |
 | Papua New Guinea | 43.09% | ![Papua New Guinea](images/papua_new_guinea.png) |
+| Switzerland | 43.30% | ![Switzerland](images/switzerland.png) |
 | Haiti | 43.68% | ![Haiti](images/haiti.png) |
-| Mayotte | 43.68% | ![Mayotte](images/mayotte.png) |
-| Pacific Islands (images/Palau) | 43.68% | ![Pacific Islands (Palau)](<pacific_islands_(palau).png>) |
-| Guyana | 43.71% | ![Guyana](images/guyana.png) |
 | Paraguay | 43.78% | ![Paraguay](images/paraguay.png) |
-| Greenland | 44.10% | ![Greenland](images/greenland.png) |
+| Mayotte | 43.86% | ![Mayotte](images/mayotte.png) |
+| Pacific Islands (Palau) | 44.28% | ![Pacific Islands (Palau)](images/pacific_islands_(palau).png) |
+| Madagascar | 44.33% | ![Madagascar](images/madagascar.png) |
+| Guyana | 44.42% | ![Guyana](images/guyana.png) |
 | St. Kitts and Nevis | 44.55% | ![St. Kitts and Nevis](images/st._kitts_and_nevis.png) |
 | Brunei | 44.58% | ![Brunei](images/brunei.png) |
+| Bulgaria | 44.77% | ![Bulgaria](images/bulgaria.png) |
 | American Samoa | 44.99% | ![American Samoa](images/american_samoa.png) |
-| Slovenia | 45.01% | ![Slovenia](images/slovenia.png) |
-| Belize | 45.11% | ![Belize](images/belize.png) |
-| Kazakhstan | 45.17% | ![Kazakhstan](images/kazakhstan.png) |
-| Czech Republic | 45.21% | ![Czech Republic](images/czech_republic.png) |
-| Hungary | 45.71% | ![Hungary](images/hungary.png) |
-| Estonia | 45.89% | ![Estonia](images/estonia.png) |
-| Jamaica | 45.93% | ![Jamaica](images/jamaica.png) |
+| Peru | 45.12% | ![Peru](images/peru.png) |
+| Austria | 45.53% | ![Austria](images/austria.png) |
+| Portugal | 45.83% | ![Portugal](images/portugal.png) |
 | Lebanon | 46.06% | ![Lebanon](images/lebanon.png) |
 | Sweden | 46.09% | ![Sweden](images/sweden.png) |
-| Turkmenistan | 46.16% | ![Turkmenistan](images/turkmenistan.png) |
-| El Salvador | 46.40% | ![El Salvador](images/el_salvador.png) |
-| Costa Rica | 46.66% | ![Costa Rica](images/costa_rica.png) |
-| Cyprus | 46.80% | ![Cyprus](images/cyprus.png) |
-| Peru | 46.81% | ![Peru](images/peru.png) |
+| Jamaica | 46.16% | ![Jamaica](images/jamaica.png) |
+| Tokelau | 46.25% | ![Tokelau](images/tokelau.png) |
+| Kazakhstan | 46.51% | ![Kazakhstan](images/kazakhstan.png) |
+| China | 46.55% | ![China](images/china.png) |
+| Costa Rica | 46.63% | ![Costa Rica](images/costa_rica.png) |
 | Ukraine | 46.89% | ![Ukraine](images/ukraine.png) |
-| United Arab Emirates | 46.93% | ![United Arab Emirates](images/united_arab_emirates.png) |
-| Antigua and Barbuda | 47.25% | ![Antigua and Barbuda](images/antigua_and_barbuda.png) |
-| Central African Republic | 47.43% | ![Central African Republic](images/central_african_republic.png) |
+| Turkmenistan | 46.91% | ![Turkmenistan](images/turkmenistan.png) |
+| United Arab Emirates | 46.94% | ![United Arab Emirates](images/united_arab_emirates.png) |
+| Johnston Atoll | 47.08% | ![Johnston Atoll](images/johnston_atoll.png) |
+| Slovenia | 47.22% | ![Slovenia](images/slovenia.png) |
+| Gibraltar | 47.43% | ![Gibraltar](images/gibraltar.png) |
+| Estonia | 47.57% | ![Estonia](images/estonia.png) |
+| El Salvador | 47.64% | ![El Salvador](images/el_salvador.png) |
 | Pakistan | 47.68% | ![Pakistan](images/pakistan.png) |
 | Congo | 48.01% | ![Congo](images/congo.png) |
-| Oman | 48.03% | ![Oman](images/oman.png) |
-| Mongolia | 48.05% | ![Mongolia](images/mongolia.png) |
-| China | 48.06% | ![China](images/china.png) |
+| Oman | 48.04% | ![Oman](images/oman.png) |
+| Belize | 48.10% | ![Belize](images/belize.png) |
+| Antigua and Barbuda | 48.47% | ![Antigua and Barbuda](images/antigua_and_barbuda.png) |
+| Czech Republic | 48.53% | ![Czech Republic](images/czech_republic.png) |
 | Greece | 48.82% | ![Greece](images/greece.png) |
-| Puerto Rico | 48.95% | ![Puerto Rico](images/puerto_rico.png) |
-| Portugal | 49.08% | ![Portugal](images/portugal.png) |
+| Hungary | 49.00% | ![Hungary](images/hungary.png) |
+| Aruba | 49.14% | ![Aruba](images/aruba.png) |
 | United Kingdom | 49.38% | ![United Kingdom](images/united_kingdom.png) |
+| Western Sahara | 49.41% | ![Western Sahara](images/western_sahara.png) |
 | Guadeloupe | 49.46% | ![Guadeloupe](images/guadeloupe.png) |
 | Mozambique | 49.76% | ![Mozambique](images/mozambique.png) |
-| Bahrain | 50.18% | ![Bahrain](images/bahrain.png) |
-| Mexico | 50.50% | ![Mexico](images/mexico.png) |
 | Yemen | 50.51% | ![Yemen](images/yemen.png) |
-| Western Sahara | 50.61% | ![Western Sahara](images/western_sahara.png) |
-| Tajikistan | 50.83% | ![Tajikistan](images/tajikistan.png) |
-| Georgia | 50.87% | ![Georgia](images/georgia.png) |
+| Mexico | 50.52% | ![Mexico](images/mexico.png) |
+| Fiji | 50.58% | ![Fiji](images/fiji.png) |
+| Cyprus | 50.64% | ![Cyprus](images/cyprus.png) |
 | Laos | 50.90% | ![Laos](images/laos.png) |
 | Croatia | 51.04% | ![Croatia](images/croatia.png) |
 | French Southern & Antarctic Lands | 51.22% | ![French Southern & Antarctic Lands](images/french_southern_&_antarctic_lands.png) |
-| Virgin Islands | 51.37% | ![Virgin Islands](images/virgin_islands.png) |
-| Israel | 51.47% | ![Israel](images/israel.png) |
-| Jersey | 51.84% | ![Jersey](images/jersey.png) |
+| Israel | 51.74% | ![Israel](images/israel.png) |
+| Virgin Islands | 51.81% | ![Virgin Islands](images/virgin_islands.png) |
+| Kyrgyzstan | 52.04% | ![Kyrgyzstan](images/kyrgyzstan.png) |
 | Anguilla | 52.54% | ![Anguilla](images/anguilla.png) |
+| Mongolia | 52.74% | ![Mongolia](images/mongolia.png) |
 | Western Samoa | 52.78% | ![Western Samoa](images/western_samoa.png) |
-| Kyrgyzstan | 52.87% | ![Kyrgyzstan](images/kyrgyzstan.png) |
-| Turkey | 53.06% | ![Turkey](images/turkey.png) |
-| Slovakia | 53.17% | ![Slovakia](images/slovakia.png) |
-| Latvia | 53.34% | ![Latvia](images/latvia.png) |
-| Iceland | 53.38% | ![Iceland](images/iceland.png) |
 | United States of America | 53.68% | ![United States of America](images/united_states_of_america.png) |
-| Cayman Islands | 54.07% | ![Cayman Islands](images/cayman_islands.png) |
-| Canada | 54.20% | ![Canada](images/canada.png) |
+| Georgia | 53.82% | ![Georgia](images/georgia.png) |
+| Tajikistan | 53.82% | ![Tajikistan](images/tajikistan.png) |
+| Bahrain | 54.04% | ![Bahrain](images/bahrain.png) |
 | Somalia | 54.67% | ![Somalia](images/somalia.png) |
 | Seychelles | 54.83% | ![Seychelles](images/seychelles.png) |
-| Guam | 55.47% | ![Guam](images/guam.png) |
+| Latvia | 54.86% | ![Latvia](images/latvia.png) |
+| Jersey | 55.27% | ![Jersey](images/jersey.png) |
+| Puerto Rico | 55.34% | ![Puerto Rico](images/puerto_rico.png) |
 | Italy | 55.48% | ![Italy](images/italy.png) |
 | Gaza Strip | 55.64% | ![Gaza Strip](images/gaza_strip.png) |
+| Guam | 55.72% | ![Guam](images/guam.png) |
 | Nepal | 56.01% | ![Nepal](images/nepal.png) |
 | Norway | 57.09% | ![Norway](images/norway.png) |
-| Faroe Islands | 58.56% | ![Faroe Islands](images/faroe_islands.png) |
-| Uzbekistan | 58.82% | ![Uzbekistan](images/uzbekistan.png) |
+| Slovakia | 57.15% | ![Slovakia](images/slovakia.png) |
+| Turkey | 57.53% | ![Turkey](images/turkey.png) |
+| Faroe Islands | 57.57% | ![Faroe Islands](images/faroe_islands.png) |
+| Cayman Islands | 57.72% | ![Cayman Islands](images/cayman_islands.png) |
+| Canada | 57.94% | ![Canada](images/canada.png) |
+| Iceland | 58.34% | ![Iceland](images/iceland.png) |
+| Uzbekistan | 58.95% | ![Uzbekistan](images/uzbekistan.png) |
+| British Indian Ocean Territory | 59.09% | ![British Indian Ocean Territory](images/british_indian_ocean_territory.png) |
 | Togo | 59.12% | ![Togo](images/togo.png) |
+| Malawi | 59.53% | ![Malawi](images/malawi.png) |
 | Jan Mayen | 59.78% | ![Jan Mayen](images/jan_mayen.png) |
-| Malawi | 60.02% | ![Malawi](images/malawi.png) |
-| Falkland Islands (images/Islas Malvinas) | 61.54% | ![Falkland Islands (Islas Malvinas)](<falkland_islands_(islas_malvinas).png>) |
-| Russia | 63.54% | ![Russia](images/russia.png) |
-| Panama | 64.29% | ![Panama](images/panama.png) |
+| St. Pierre and Miquelon | 60.44% | ![St. Pierre and Miquelon](images/st._pierre_and_miquelon.png) |
+| Falkland Islands (Islas Malvinas) | 61.62% | ![Falkland Islands (Islas Malvinas)](images/falkland_islands_(islas_malvinas).png) |
+| Northern Mariana Islands | 61.76% | ![Northern Mariana Islands](images/northern_mariana_islands.png) |
+| Wallis and Futuna | 61.90% | ![Wallis and Futuna](images/wallis_and_futuna.png) |
+| Turks and Caicos Islands | 62.39% | ![Turks and Caicos Islands](images/turks_and_caicos_islands.png) |
+| Cook Islands | 62.47% | ![Cook Islands](images/cook_islands.png) |
+| British Virgin Islands | 62.62% | ![British Virgin Islands](images/british_virgin_islands.png) |
+| Tonga | 62.95% | ![Tonga](images/tonga.png) |
+| Kiribati | 64.52% | ![Kiribati](images/kiribati.png) |
 | Svalbard | 64.53% | ![Svalbard](images/svalbard.png) |
-| Wallis and Futuna | 64.61% | ![Wallis and Futuna](images/wallis_and_futuna.png) |
 | Vietnam | 64.61% | ![Vietnam](images/vietnam.png) |
-| St. Pierre and Miquelon | 65.42% | ![St. Pierre and Miquelon](images/st._pierre_and_miquelon.png) |
-| Kiribati | 66.82% | ![Kiribati](images/kiribati.png) |
+| Panama | 64.69% | ![Panama](images/panama.png) |
+| Comoros | 64.77% | ![Comoros](images/comoros.png) |
+| Russia | 64.83% | ![Russia](images/russia.png) |
 | South Georgia and the South Sandwich Is | 67.50% | ![South Georgia and the South Sandwich Is](images/south_georgia_and_the_south_sandwich_is.png) |
-| Turks and Caicos Islands | 69.37% | ![Turks and Caicos Islands](images/turks_and_caicos_islands.png) |
+| New Zealand | 68.22% | ![New Zealand](images/new_zealand.png) |
+| Paracel Islands | 68.87% | ![Paracel Islands](images/paracel_islands.png) |
 | New Caledonia | 69.99% | ![New Caledonia](images/new_caledonia.png) |
+| Cuba | 70.14% | ![Cuba](images/cuba.png) |
+| Malaysia | 70.18% | ![Malaysia](images/malaysia.png) |
 | Japan | 70.79% | ![Japan](images/japan.png) |
-| Philippines | 71.89% | ![Philippines](images/philippines.png) |
-| Gambia, The | 72.24% | ![Gambia, The](images/gambia,_the.png) |
-| Tonga | 73.92% | ![Tonga](images/tonga.png) |
-| Indonesia | 74.13% | ![Indonesia](images/indonesia.png) |
-| Vanuatu | 75.00% | ![Vanuatu](images/vanuatu.png) |
-| Cook Islands | 77.09% | ![Cook Islands](images/cook_islands.png) |
-| Federated States of Micronesia | 77.51% | ![Federated States of Micronesia](images/federated_states_of_micronesia.png) |
-| Cuba | 78.80% | ![Cuba](images/cuba.png) |
-| Solomon Islands | 79.77% | ![Solomon Islands](images/solomon_islands.png) |
+| Philippines | 71.71% | ![Philippines](images/philippines.png) |
+| Netherlands Antilles | 72.56% | ![Netherlands Antilles](images/netherlands_antilles.png) |
+| Indonesia | 74.16% | ![Indonesia](images/indonesia.png) |
+| Gambia, The | 74.48% | ![Gambia, The](images/gambia,_the.png) |
+| Bahamas, The | 74.87% | ![Bahamas, The](images/bahamas,_the.png) |
+| Vanuatu | 75.02% | ![Vanuatu](images/vanuatu.png) |
+| Bermuda | 77.03% | ![Bermuda](images/bermuda.png) |
+| Cape Verde | 78.68% | ![Cape Verde](images/cape_verde.png) |
+| Solomon Islands | 79.23% | ![Solomon Islands](images/solomon_islands.png) |
 | Marshall Islands | 79.88% | ![Marshall Islands](images/marshall_islands.png) |
 | Chile | 79.92% | ![Chile](images/chile.png) |
-| Cape Verde | 84.85% | ![Cape Verde](images/cape_verde.png) |
-| British Virgin Islands | 85.06% | ![British Virgin Islands](images/british_virgin_islands.png) |
+| Antarctica | 82.41% | ![Antarctica](images/antarctica.png) |
 | French Polynesia | 85.45% | ![French Polynesia](images/french_polynesia.png) |
-| Antarctica | 85.70% | ![Antarctica](images/antarctica.png) |
-| Malaysia | 86.06% | ![Malaysia](images/malaysia.png) |
-| Netherlands Antilles | 88.18% | ![Netherlands Antilles](images/netherlands_antilles.png) |
-| Comoros | 89.82% | ![Comoros](images/comoros.png) |
-| Bahamas, The | 93.25% | ![Bahamas, The](images/bahamas,_the.png) |
-| Mauritius | 95.00% | ![Mauritius](images/mauritius.png) |
-| Pitcairn Islands | 99.78% | ![Pitcairn Islands](images/pitcairn_islands.png) |
-| Tuvalu | 99.96% | ![Tuvalu](images/tuvalu.png) |
-| New Zealand | 99.98% | ![New Zealand](images/new_zealand.png) |
-| Paracel Islands | 99.98% | ![Paracel Islands](images/paracel_islands.png) |
-| Spratly Islands | 99.98% | ![Spratly Islands](images/spratly_islands.png) |
-| Maldives | 100.00% | ![Maldives](images/maldives.png) |
-| Fiji | 100.00% | ![Fiji](images/fiji.png) |
-| Norfolk Island | 100.00% | ![Norfolk Island](images/norfolk_island.png) |
-| Liechtenstein | 100.00% | ![Liechtenstein](images/liechtenstein.png) |
-| Midway Islands | 100.00% | ![Midway Islands](images/midway_islands.png) |
-| Aruba | 100.00% | ![Aruba](images/aruba.png) |
-| Jarvis Island | 100.00% | ![Jarvis Island](images/jarvis_island.png) |
-| Niue | 100.00% | ![Niue](images/niue.png) |
-| Northern Mariana Islands | 100.00% | ![Northern Mariana Islands](images/northern_mariana_islands.png) |
-| Macau | 100.00% | ![Macau](images/macau.png) |
-| British Indian Ocean Territory | 100.00% | ![British Indian Ocean Territory](images/british_indian_ocean_territory.png) |
-| San Marino | 100.00% | ![San Marino](images/san_marino.png) |
-| Baker Island | 100.00% | ![Baker Island](images/baker_island.png) |
-| Wake Island | 100.00% | ![Wake Island](images/wake_island.png) |
-| Bouvet Island | 100.00% | ![Bouvet Island](images/bouvet_island.png) |
-| St. Helena | 100.00% | ![St. Helena](images/st._helena.png) |
-| Nauru | 100.00% | ![Nauru](images/nauru.png) |
-| Glorioso Islands | 100.00% | ![Glorioso Islands](images/glorioso_islands.png) |
-| Johnston Atoll | 100.00% | ![Johnston Atoll](images/johnston_atoll.png) |
-| Bermuda | 100.00% | ![Bermuda](images/bermuda.png) |
-| Juan De Nova Island | 100.00% | ![Juan De Nova Island](images/juan_de_nova_island.png) |
-| Guernsey | 100.00% | ![Guernsey](images/guernsey.png) |
-| Tokelau | 100.00% | ![Tokelau](images/tokelau.png) |
-| Howland Island | 100.00% | ![Howland Island](images/howland_island.png) |
-| Gibraltar | 100.00% | ![Gibraltar](images/gibraltar.png) |
-| Christmas Island | 100.00% | ![Christmas Island](images/christmas_island.png) |
+| Tuvalu | 86.19% | ![Tuvalu](images/tuvalu.png) |
+| Maldives | 91.51% | ![Maldives](images/maldives.png) |
