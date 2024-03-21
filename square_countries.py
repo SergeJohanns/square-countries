@@ -130,8 +130,7 @@ if __name__ == "__main__":
     args = parser.parse_args()
 
     countries = get_country_shapes(args.country_file)
-    target_countries = list(countries.keys())[:10]
-    scores = calculate_scores(countries, target_countries)
+    scores = calculate_scores(countries)
 
     write_report(args.report_output, scores)
 
