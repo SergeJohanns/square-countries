@@ -4,9 +4,18 @@ from shapely.affinity import rotate
 
 
 class Square(Shape):
-    @classmethod
-    def first_guess(cls, minx, miny, maxx, maxy):
+    @staticmethod
+    def first_guess(minx, miny, maxx, maxy):
         return [minx, miny, max(maxx - minx, maxy - miny), 0]
+
+    @staticmethod
+    def get_bounds(minx, miny, maxx, maxy):
+        return [
+            (minx, maxx),
+            (miny, maxy),
+            (0, max(maxx - minx, maxy - miny)),
+            (0, 360),
+        ]
 
     @staticmethod
     def from_parameters(parameters) -> Geometry:

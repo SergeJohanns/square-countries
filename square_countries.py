@@ -29,7 +29,7 @@ def make_target_function(country_shape):
     return target_function
 
 
-def optimize(country_shape):
+def basin_hop_optimize(country_shape):
     iterations = 10
     target_function = make_target_function(country_shape)
     first_guess = Square.first_guess(*country_shape.bounds)
@@ -41,7 +41,16 @@ def optimize(country_shape):
     return optimal_parameters.x, optimal_parameters.fun
 
 
-def calculate_scores(countries, target_countries=None):
+def dual_annealing_optimize(country_shape):
+    target_function = make_target_function(country_shape)
+    bounds = Square.get_bounds(*country_shape.bounds)
+
+    optimal_parameters = scipy.optimize.dual_annealing(target_function, bounds)
+
+    return optimal_parameters.x, optimal_parameters.fun
+
+
+def calculate_scores(countries, target_countries, optimize):
     if target_countries is None:
         target_countries = countries.keys()
     scores = []
@@ -128,10 +137,21 @@ if __name__ == "__main__":
         nargs="+",
         default=None,
     )
+    parser.add_argument(
+        "--method",
+        help="Optimization method to use.",
+        choices=["basin-hop", "dual-annealing"],
+        default="basin-hop",
+    )
     args = parser.parse_args()
 
     countries = get_country_shapes(args.country_file)
-    scores = calculate_scores(countries, args.target_countries)
+    match args.method:
+        case "basin-hop":
+            optimize = basin_hop_optimize
+        case "dual-annealing":
+            optimize = dual_annealing_optimize
+    scores = calculate_scores(countries, args.target_countries, optimize)
 
     write_report(args.report_output, scores)
 
