@@ -86,7 +86,7 @@ def write_report(report_output, scores):
         plot_polygon(square, color="red", add_points=False)
         plt.savefig(report_output / f"{country_to_filename(country)}")
         plt.clf()
-    with open(args.report_output / "report.md", "w") as f:
+    with open(args.report_output / "README.md", "w") as f:
         f.write("# Country Shape Tester\n")
         f.write("## Countries\n")
         f.write("The following countries were tested:\n")
