@@ -1,9 +1,10 @@
+import json
 import scipy
 import geojson
 from shapely.geometry import shape
 from shapely.plotting import plot_polygon
 import matplotlib.pyplot as plt
-from alive_progress import alive_bar
+from alive_progress import alive_it
 
 from shapes.square import Square
 
@@ -35,21 +36,43 @@ def make_target_function(country_shape):
 
 
 def optimize(country_shape):
-    iterations = 20
+    iterations = 10
     target_function = make_target_function(country_shape)
     first_guess = Square.first_guess(*country_shape.bounds)
 
     optimal_parameters = scipy.optimize.basinhopping(
-        target_function, first_guess, niter_success=iterations, disp=True
+        target_function, first_guess, niter_success=iterations
     )
 
     return optimal_parameters.x, optimal_parameters.fun
 
 
-TARGET_COUNTRY = "Netherlands"
-plot_polygon(geometric_shapes[TARGET_COUNTRY], add_points=False)
-optimal_square, score = optimize(geometric_shapes[TARGET_COUNTRY])
-print(score)
-plot_polygon(Square.from_parameters(optimal_square), add_points=False, color="red")
-plt.show()
-quit()
+def calculate_scores(target_countries=list(geometric_shapes.keys())):
+    scores = []
+    bar = alive_it(target_countries)
+
+    for country_name in bar:
+        shape = geometric_shapes[country_name]
+        bar.text = country_name
+        optimal_square, score = optimize(geometric_shapes[country_name])
+        scores.append(
+            {
+                "country": country_name,
+                "parameters": list(optimal_square),
+                "score": score,
+            }
+        )
+
+    scores.sort(key=lambda x: x["score"])
+    return scores
+
+
+target_countries = list(geometric_shapes.keys())[:10]
+scores = calculate_scores(target_countries)
+for item in scores:
+    country = item["country"]
+    plot_polygon(geometric_shapes[country], add_points=False)
+    square = Square.from_parameters(item["parameters"])
+    plot_polygon(square, color="red", add_points=False)
+    plt.show()
+print(json.dumps(scores))
