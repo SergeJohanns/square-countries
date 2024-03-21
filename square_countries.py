@@ -72,11 +72,12 @@ def get_country_shapes(file):
 
 
 def country_to_filename(country_name):
-    return f"{country_name.lower().replace(' ', '_')}.png"
+    return f"images/{country_name.lower().replace(' ', '_')}.png"
 
 
 def write_report(report_output, scores):
-    report_output.mkdir(exist_ok=True, parents=True)
+    image_output = report_output / "images"
+    image_output.mkdir(exist_ok=True, parents=True)
     for item in scores:
         plt.axis("off")
         plt.tight_layout()
