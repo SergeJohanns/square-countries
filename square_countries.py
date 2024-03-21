@@ -116,7 +116,7 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--report-output",
-        help="Path to write the markdown report to.",
+        help="Path to write the markdown report to. (default is 'report')",
         type=pathlib.Path,
         default="report",
     )
@@ -127,13 +127,13 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--country-file",
-        help="GeoJSON file containing the country shapes.",
+        help="GeoJSON file containing the country shapes. (default is 'country_shapes.geojson')",
         default="country_shapes.geojson",
         type=open,
     )
     parser.add_argument(
         "--target-countries",
-        help="List of countries to test.",
+        help="List of countries to test. (default is all countries in the file)",
         nargs="+",
         default=None,
     )
@@ -145,9 +145,9 @@ if __name__ == "__main__":
     )
     parser.add_argument(
         "--method",
-        help="Optimization method to use.",
+        help="Optimization method to use: Dual Annealing (default) or Basin-Hopping (faster).",
         choices=["basin-hop", "dual-annealing"],
-        default="basin-hop",
+        default="dual-annealing",
     )
     args = parser.parse_args()
 
