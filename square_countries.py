@@ -128,10 +128,16 @@ if __name__ == "__main__":
         default="country_shapes.geojson",
         type=open,
     )
+    parser.add_argument(
+        "--target-countries",
+        help="List of countries to test.",
+        nargs="+",
+        default=None,
+    )
     args = parser.parse_args()
 
     countries = get_country_shapes(args.country_file)
-    scores = calculate_scores(countries)
+    scores = calculate_scores(countries, args.target_countries)
 
     write_report(args.report_output, scores)
 
