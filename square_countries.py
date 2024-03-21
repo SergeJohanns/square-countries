@@ -88,15 +88,9 @@ def write_report(report_output, scores):
         plt.savefig(report_output / f"{country_to_filename(country)}")
         plt.clf()
     with open(args.report_output / "README.md", "w") as f:
-        f.write("# Country Shape Tester\n")
-        f.write("## Countries\n")
-        f.write("The following countries were tested:\n")
-        for item in scores:
-            f.write(f"- {item['country']}\n")
-        f.write("\n")
-        f.write("## Results\n")
+        f.write("# Country Shape Test Results\n")
         f.write(
-            "The following table shows the scores and optimal shape parameters for each country:\n"
+            "The following table shows the scores and optimal shape for each country:\n"
         )
         f.write("| Country | Error | Image |\n")
         f.write("|---------|-------|------------|\n")
