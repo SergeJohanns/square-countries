@@ -8,31 +8,31 @@ from shapely.plotting import plot_polygon
 import matplotlib.pyplot as plt
 from alive_progress import alive_it
 
-from shapes.square import Square
+from shapes import get_shape
 
 
-def error_function(target_shape, country_shape):
+def error_function(target_outline, country_outline):
     """
     Return the Jaccard distance between the two shapes.
     """
     return (
-        target_shape.symmetric_difference(country_shape).area
-        / target_shape.union(country_shape).area
+        target_outline.symmetric_difference(country_outline).area
+        / target_outline.union(country_outline).area
     )
 
 
-def make_target_function(country_shape):
-    def target_function(target_shape_parameters):
-        target_shape = Square.from_parameters(target_shape_parameters)
-        return error_function(target_shape, country_shape)
+def make_target_function(country_outline, target_shape):
+    def target_function(target_outline_parameters):
+        target_outline = target_shape.from_parameters(target_outline_parameters)
+        return error_function(target_outline, country_outline)
 
     return target_function
 
 
-def basin_hop_optimize(country_shape):
+def basin_hop_optimize(country_outline, target_shape):
     iterations = 10
-    target_function = make_target_function(country_shape)
-    first_guess = Square.first_guess(*country_shape.bounds)
+    target_function = make_target_function(country_outline)
+    first_guess = target_shape.first_guess(*country_outline.bounds)
 
     optimal_parameters = scipy.optimize.basinhopping(
         target_function, first_guess, niter_success=iterations
@@ -41,16 +41,16 @@ def basin_hop_optimize(country_shape):
     return optimal_parameters.x, optimal_parameters.fun
 
 
-def dual_annealing_optimize(country_shape):
-    target_function = make_target_function(country_shape)
-    bounds = Square.get_bounds(*country_shape.bounds)
+def dual_annealing_optimize(country_outline, target_shape):
+    target_function = make_target_function(country_outline, target_shape)
+    bounds = target_shape.get_bounds(*country_outline.bounds)
 
     optimal_parameters = scipy.optimize.dual_annealing(target_function, bounds)
 
     return optimal_parameters.x, optimal_parameters.fun
 
 
-def calculate_scores(countries, target_countries, optimize):
+def calculate_scores(countries, target_countries, target_shape, optimize):
     if target_countries is None:
         target_countries = countries.keys()
     scores = []
@@ -59,11 +59,11 @@ def calculate_scores(countries, target_countries, optimize):
     for country_name in bar:
         shape = countries[country_name]
         bar.text = country_name
-        optimal_square, score = optimize(countries[country_name])
+        best_fit_parameters, score = optimize(countries[country_name], target_shape)
         scores.append(
             {
                 "country": country_name,
-                "parameters": list(optimal_square),
+                "parameters": list(best_fit_parameters),
                 "score": score,
             }
         )
@@ -84,7 +84,7 @@ def country_to_filename(country_name):
     return f"images/{country_name.lower().replace(' ', '_')}.png"
 
 
-def write_report(report_output, scores):
+def write_report(report_output, scores, shape):
     image_output = report_output / "images"
     image_output.mkdir(exist_ok=True, parents=True)
     for item in scores:
@@ -92,8 +92,8 @@ def write_report(report_output, scores):
         plt.tight_layout()
         country = item["country"]
         plot_polygon(countries[country], add_points=False)
-        square = Square.from_parameters(item["parameters"])
-        plot_polygon(square, color="red", add_points=False)
+        best_fit = shape.from_parameters(item["parameters"])
+        plot_polygon(best_fit, color="red", add_points=False)
         plt.savefig(report_output / f"{country_to_filename(country)}")
         plt.clf()
     with open(args.report_output / "README.md", "w") as f:
@@ -138,6 +138,12 @@ if __name__ == "__main__":
         default=None,
     )
     parser.add_argument(
+        "--shape",
+        help="Name of shape to use, in snake_case. (default is 'square')",
+        choices=["square"],
+        default="square",
+    )
+    parser.add_argument(
         "--method",
         help="Optimization method to use.",
         choices=["basin-hop", "dual-annealing"],
@@ -151,9 +157,10 @@ if __name__ == "__main__":
             optimize = basin_hop_optimize
         case "dual-annealing":
             optimize = dual_annealing_optimize
-    scores = calculate_scores(countries, args.target_countries, optimize)
+    target_shape = get_shape(args.shape)
+    scores = calculate_scores(countries, args.target_countries, target_shape, optimize)
 
-    write_report(args.report_output, scores)
+    write_report(args.report_output, scores, target_shape)
 
     if args.json_output:
         with args.json_output as f:
