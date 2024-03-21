@@ -78,6 +78,8 @@ def country_to_filename(country_name):
 def write_report(report_output, scores):
     report_output.mkdir(exist_ok=True, parents=True)
     for item in scores:
+        plt.axis("off")
+        plt.tight_layout()
         country = item["country"]
         plot_polygon(countries[country], add_points=False)
         square = Square.from_parameters(item["parameters"])
