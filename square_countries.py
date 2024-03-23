@@ -72,10 +72,10 @@ def calculate_scores(countries, target_countries, target_shape, optimize):
     return scores
 
 
-def get_country_shapes(file):
+def get_country_shapes(file, name_field):
     with file as f:
         return {
-            geo_shape["properties"]["cntry_name"]: shape(geo_shape["geometry"])
+            geo_shape["properties"][name_field]: shape(geo_shape["geometry"])
             for geo_shape in geojson.load(f)["features"]
         }
 
@@ -132,6 +132,11 @@ if __name__ == "__main__":
         type=open,
     )
     parser.add_argument(
+        "--country-name-field",
+        help="Name of the GeoJSON property containing the country name. (default is 'cntry_name', see the file for the right field)",
+        default="cntry_name",
+    )
+    parser.add_argument(
         "--target-countries",
         help="List of countries to test. (default is all countries in the file)",
         nargs="+",
@@ -151,7 +156,7 @@ if __name__ == "__main__":
     )
     args = parser.parse_args()
 
-    countries = get_country_shapes(args.country_file)
+    countries = get_country_shapes(args.country_file, args.country_name_field)
     match args.method:
         case "basin-hop":
             optimize = basin_hop_optimize
