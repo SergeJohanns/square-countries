@@ -146,7 +146,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "--shape",
         help="Name of shape to use, in snake_case. (default is 'square')",
-        choices=["square"],
         default="square",
     )
     parser.add_argument(
