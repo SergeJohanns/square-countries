@@ -75,7 +75,8 @@ def calculate_scores(countries, target_countries, target_shape, optimize):
 def get_country_shapes(file, name_field):
     with file as f:
         return {
-            geo_shape["properties"][name_field]: shape(geo_shape["geometry"])
+            geo_shape["properties"][name_field]: shape(geo_shape["geometry"]).buffer(0)
+            # .buffer(0) fixes some invalid geometries, see https://stackoverflow.com/a/14094033/13511743
             for geo_shape in geojson.load(f)["features"]
         }
 
