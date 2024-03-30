@@ -81,11 +81,17 @@ def get_country_shapes(file, name_field):
         }
 
 
+def simplify_country_shape(shape, tolerance):
+    minx, miny, maxx, maxy = shape.bounds
+    short_side = min(maxx - minx, maxy - miny)
+    return shape.simplify(short_side * tolerance).buffer(0)
+
+
 def country_to_filename(country_name):
     return f"images/{country_name.lower().replace(' ', '_')}.png"
 
 
-def write_report(report_output, scores, shape):
+def write_report(countries, report_output, scores, shape):
     image_output = report_output / "images"
     image_output.mkdir(exist_ok=True, parents=True)
     for item in scores:
@@ -154,18 +160,34 @@ if __name__ == "__main__":
         choices=["basin-hop", "dual-annealing"],
         default="dual-annealing",
     )
+    parser.add_argument(
+        "--tolerance",
+        help="Tolerance for simplifying the country shapes, as a portion of the minimum of the width and height. (default is 0.01, 0 for no simplification)",
+        type=float,
+        default=0.01,
+    )
     args = parser.parse_args()
 
     countries = get_country_shapes(args.country_file, args.country_name_field)
+    if args.tolerance != 0:
+        simplified_countries = {
+            country: simplify_country_shape(shape, args.tolerance)
+            for country, shape in countries.items()
+        }
     match args.method:
         case "basin-hop":
             optimize = basin_hop_optimize
         case "dual-annealing":
             optimize = dual_annealing_optimize
     target_shape = get_shape(args.shape)
-    scores = calculate_scores(countries, args.target_countries, target_shape, optimize)
+    scores = calculate_scores(
+        simplified_countries if args.tolerance != 0 else countries,
+        args.target_countries,
+        target_shape,
+        optimize,
+    )
 
-    write_report(args.report_output, scores, target_shape)
+    write_report(countries, args.report_output, scores, target_shape)
 
     if args.json_output:
         with args.json_output as f:

@@ -30,7 +30,7 @@ information.
 The actual synopsis for the tool is
 
 ```
-usage: Country Shape Tester [-h] [--report-output REPORT_OUTPUT] [--json-output JSON_OUTPUT] [--country-file COUNTRY_FILE] [--target-countries TARGET_COUNTRIES [TARGET_COUNTRIES ...]] [--shape {square}] [--method {basin-hop,dual-annealing}]
+usage: Country Shape Tester [-h] [--report-output REPORT_OUTPUT] [--json-output JSON_OUTPUT] [--country-file COUNTRY_FILE] [--target-countries TARGET_COUNTRIES [TARGET_COUNTRIES ...]] [--shape {square}] [--method {basin-hop,dual-annealing}] [--tolerance TOLERANCE]
 
 Program to test which country is best approximated by a certain shape.
 
@@ -47,6 +47,8 @@ options:
   --shape {square}      Name of shape to use, in snake_case. (default is 'square')
   --method {basin-hop,dual-annealing}
                         Optimization method to use: Dual Annealing (default) or Basin-Hopping (faster).
+  --tolerance TOLERANCE
+                        Tolerance for simplifying the country shapes, as a portion of the minimum of the width and height. (default is 0.01, 0 for no simplification)
 ```
 
 The tool always outputs a report like the one in [report](report/README.md).the
@@ -67,6 +69,17 @@ essentially have many local optima separated by valleys where there is so much
 non-land any shape placed there would have an error of almost 100%. The
 Basin-Hopping algorithm runs somewhat faster, but the Dual Annealing algorithm
 tends to produce more reliable results, especially on small island nations.
+
+The `--tolerance` option specifies the error tolerance for simplifying the
+country shapes with the Douglas-Peucker algorithm. The shapes are simplified
+since small details, especially on the coastline for detailed maps, can
+significantly slow down the calculations but do not significantly impact to what
+degree the country matches a shape. The tolerance specifies the maximum distance
+between the simplification and the actual shape at any point, relative to the
+minimum of the width and height of the country. For instance, if the rectangular
+bounding box of a country is wider than it is tall and the tolerance has the
+default value of 0.01, then the maximum error is 1% of the height of the
+bounding box.
 
 ## Shapes
 
